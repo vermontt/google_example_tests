@@ -8,7 +8,8 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class GoogleResultSearchPage {
 
-    private final ElementsCollection listResults = $$(".yuRUbf");
+    // ломаем тесты для демонстрации
+    public static ElementsCollection listResults = $$(".yuRUbf");
 
     public void checkResults(String expected) {
         listResults.shouldBe(CollectionCondition.sizeGreaterThan(0))
